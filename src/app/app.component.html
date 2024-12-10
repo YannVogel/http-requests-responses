@@ -1,5 +1,9 @@
+@if (error()) {
+  <app-error-modal title="An error occurred!" [message]="error()" />
+}
+
 <header>
-  <img src="logo.png" alt="Stylized globe" />
+  <img alt="Stylized globe" src="logo.png" />
   <h1>PlacePicker</h1>
   <p>
     Create your personal collection of places you would like to visit or you
